@@ -13,8 +13,8 @@ export default function Card({ person }) {
         <p className="name">{`${person.name}, ${person.age}`}</p>
         <p className="location">{`${person.distance}`}</p>
       </div>
-      <br />
-      {person.bio}
+
+      <p className="bio">{person.bio}</p>
     </TinderCard>
   );
 }
