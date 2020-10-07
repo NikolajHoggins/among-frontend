@@ -3,7 +3,7 @@ import TinderCard from "react-tinder-card";
 
 export default function Card({ person }) {
   return (
-    <TinderCard className="card">
+    <TinderCard className="card" preventSwipe={["up", "down"]}>
       <div
         style={{ backgroundImage: `url(${person.pics[0]})` }}
         alt="picture"
