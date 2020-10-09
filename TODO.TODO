@@ -1,0 +1,18 @@
+Frontend:
+    ☐ Matches page
+
+
+
+    
+Backend:
+    finish user table:
+        ☐ add image
+        ☐ add name
+        ☐ add location
+        
+    users to display:
+        ☐ Return all users for testing.
+        ☐ return a few at a time.
+        ☐ MAYBE recommend users.
+        ☐ Calculate distance
+    

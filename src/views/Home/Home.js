@@ -25,10 +25,14 @@ export default function Home() {
         </div>
       </div>
 
-      <br />
-      <Link to="/profile">To profile</Link>
-      <br />
-      <Link to="/matches">To matches</Link>
+      <div className="nav">
+        <div className="nav-button">
+          <Link to="/profile">To profile</Link>
+        </div>
+        <div className="nav-button">
+          <Link to="/matches">To matches</Link>
+        </div>
+      </div>
     </div>
   );
 }
