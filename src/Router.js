@@ -7,6 +7,7 @@ import Login from "./views/Login";
 import Home from "./views/Home";
 
 import "./assets/scss/main.scss";
+import Navbar from "./components/Navbar";
 
 export default function Router() {
   const [user, setUser] = useState(null);
@@ -24,12 +25,15 @@ export default function Router() {
   //Create an auth router and a non-auth
   if (user) {
     return (
-      <ReachRouter>
-        <Home path="/" />
-        <Matches path="/matches" />
-        <Profile path="/profile" />
-        <Redirect default noThrow from="/login" to="/" />
-      </ReachRouter>
+      <React.Fragment>
+        <ReachRouter>
+          <Home path="/" />
+          <Matches path="/matches" />
+          <Profile path="/profile" />
+          <Redirect default noThrow from="/login" to="/" />
+        </ReachRouter>
+        <Navbar />
+      </React.Fragment>
     );
   } else {
     return (

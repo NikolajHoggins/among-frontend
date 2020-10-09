@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "@reach/router";
 import "./Home.scss";
 import CardStack from "../../components/CardStack";
+
 export default function Home() {
   return (
     <div className="home">
@@ -22,15 +23,6 @@ export default function Home() {
           <div className="btn like">
             <img src={require("../../assets/img/white-heart.svg")} alt="" />
           </div>
-        </div>
-      </div>
-
-      <div className="nav">
-        <div className="nav-button">
-          <Link to="/profile">To profile</Link>
-        </div>
-        <div className="nav-button">
-          <Link to="/matches">To matches</Link>
         </div>
       </div>
     </div>

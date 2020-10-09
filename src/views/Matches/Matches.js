@@ -31,9 +31,6 @@ export default class Matches extends Component {
                 </div>
               ))}
             </div>
-            <Link to="/">to home</Link>
-            <br />
-            <Link to="/profile">to profile</Link>
           </div>
         </div>
       );
